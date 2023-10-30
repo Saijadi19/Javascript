@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Assignment</title>
+</head>
+
+<body>
+    <script>
+        // Array from permutation
+
+        var buildArray = function (nums) {
+            const result = new Array(nums.length);
+            for (let i = 0; i < nums.length; i++) {
+                result[i] = nums[nums[i]];
+            }
+            return result;
+        };
+
+        const nums = [0, 2, 1, 5, 3, 4];
+        const resultArray = buildArray(nums);
+        console.log(" created array   " + nums);
+        console.log(resultArray);
+
+
+        //  employ met the target
+        var numberOfEmployeesWhoMetTarget = function (hours, target) {
+            let count = 0;
+            let len = hours.length;
+            for (let i = 0; i < len; i++) {
+                if (target <= hours[i]) {
+                    count++;
+                }
+            }
+            return count;
+        };
+        const hours1 = [8, 6, 7, 9, 5];
+        const target1 = 8;
+        console.log(numberOfEmployeesWhoMetTarget(hours1, target1));
+
+        const hours2 = [6, 5, 5, 4, 7];
+        const target2 = 6;
+        console.log(numberOfEmployeesWhoMetTarget(hours2, target2));
+
+        // shuffled Array
+        var shuffle = function (numbers, n) {
+            let newarr = [];
+            for (let i = 0; i < n; i++) {
+                newarr.push(numbers[i]);
+                newarr.push(numbers[n + i]);
+            }
+            return newarr;
+        };
+
+        let numbers = [2, 5, 1, 3, 4, 7];
+        let n = 3;
+        console.log(shuffle(numbers, n))
+
+
+        // Discounted final price
+        var finalPrices = function (prices) {
+            let i, j;
+            let answer = [];
+            for (i = 0; i < prices.length; i++) {
+                for (j = i + 1; j < prices.length; j++) {
+                    if (prices[j] <= prices[i]) {
+                        prices[i] = prices[i] - prices[j];
+                        break;
+                    }
+                }
+                answer.push(prices[i]);
+            }
+            return answer;
+        };
+
+        let prices = [8, 4, 6, 2, 3];
+        console.log(finalPrices(prices));
+    </script>
+
+
+    <script>
+     // RunningSum
+        var runningSum = function (nums) {
+            let ans = [];
+            let sum = 0;
+            for (let i = 0; i < nums.length; i++) {
+                sum += nums[i];
+                ans.push(sum);
+            }
+            return ans;
+        };
+        let number = [1, 2, 3, 4, 5];
+        console.log(runningSum(number));
+    </script>
+</body>
+
+</html>

@@ -1,0 +1,212 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Assignment.</title>
+</head>
+
+<body>
+
+  <script>
+    class bankAcc {
+      constructor(accountNum, balance) {
+        this.accountNum = accountNum;
+        this.balance = balance;
+
+
+      }
+      getAccountnum() {
+        return this.accountNum;
+      }
+      getbalance() {
+        return this.balance;
+      }
+      deposit(amount) {
+        if (amount > 0) {
+          this.balance += amount;
+        }
+      }
+      widthDraw(amount) {
+
+        if (amount > 0 && amount <= this.balance)
+          this.balance -= amount;
+
+      }
+
+    }
+    let fetchDetails = new bankAcc("917997872784", 2000)
+    console.log(fetchDetails)
+
+    console.log("Account number " + fetchDetails.getAccountnum())
+
+    fetchDetails.deposit(5000);
+    console.log("Depositing amount " + fetchDetails.getbalance());
+
+    fetchDetails.widthDraw(1000)
+    console.log("After withdrawing " + fetchDetails.getbalance());
+
+
+
+    class TemperatureConv {
+      constructor(intialVal = 0) {
+        this.celsius = intialVal;
+
+
+      }
+      setCelsius(value) {
+        if (value < -273.15)
+          console.log("Temp is below zero");
+        else
+          this.celsius = value;
+
+      }
+      getCelsius() {
+        return this.celsius;
+      }
+      ConvertFahrenheit() {
+        return (this.celsius * 9 / 5) + 32;
+
+
+      }
+      ConvertKelvin() {
+        return (this.celsius + 273.15)
+      }
+
+
+    }
+    let converter = new TemperatureConv(20);
+    console.log(`Temperature ${converter.getCelsius()}`)
+    console.log(`Temperature after conveting into F is ${converter.ConvertFahrenheit()}`)
+    console.log(`Temperature after conveting into k is ${converter.ConvertKelvin()}`)
+
+
+    class MathOperations {
+      static sqaure(number) {
+        return number * number;
+
+      }
+
+    }
+    class AdvancedMathOperations extends MathOperations {
+
+      static cube(number) {
+        return number * number * number;
+
+      }
+    }
+    const number = 4;
+    const sqr = MathOperations.sqaure(number)
+    console.log(`Square of ${number} is: ${sqr}`);
+    const cube = AdvancedMathOperations.cube(number)
+    console.log(`Cube of ${number} is: ${cube}`);
+
+
+
+
+    class shape{
+  
+      calculateArea(){
+        console.log("Area calc not possible")
+
+      }
+      calculatePerimeter(){
+        console.log("Perimeter calc not possible")
+
+      }
+
+    }
+    class Circle extends shape{
+      constructor(radius){
+        super();
+        this.radius=radius;
+
+      }
+
+
+      calculateArea(){
+        return Math.PI*this.radius*this.radius
+      }
+
+      calculatePerimeter(){
+      return 2*Math.PI*this.radius
+
+
+      }
+
+
+
+    }
+    class Square extends shape{
+      constructor(side){
+        super()
+        this.side=side;
+      }
+      calculateArea()
+      {
+        return this.side*this.side
+      }
+      calculatePerimeter(){
+      return 4*this.side;
+
+
+      }
+
+
+    }
+    let CircleValue=new Circle(2);
+    let SquareValue=new Square(3);
+    console.log(`Area of circle with radius is ${CircleValue.calculateArea()}`)
+    console.log(`Area of the square with side   is: ${SquareValue.calculateArea()}`)
+    
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  </script>
+</body>
+
+</html>

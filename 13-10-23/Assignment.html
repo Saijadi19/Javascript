@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Assignment</title>
+</head>
+<body>
+    <h3> Problems on strings</h3>
+    <script>
+        document.write("1.Length of a string. <br>")
+
+        let nums='hey my name is kiran'
+        document.write( nums.length + "<hr>")
+
+
+     document.write("2.Converting LowerCase to Uppercase.<br>")
+        
+      let input="Sai Kiran jadi"
+      let upperCase=input.toUpperCase();
+      document.write(upperCase +"<hr>")
+
+
+      document.write("3.Replacing string. <br>")
+     function replaceing(){ 
+     let str='Hey kiran ! why are you still waiting?<hr>'
+     document.write(str.replace("kiran","Sai Jadiii"));
+
+        
+      }
+      replaceing()
+      
+      document.write("4.Concat string.<br>");
+      
+      let a='Sai';
+      let b='Kiran';
+      document.write(a.concat(' ',b +' Jadi<hr>'));
+
+
+      document.write("5.Trim method.<br>");
+      let string='   heyhola    ';
+      let strlen=string.trim();
+      
+      document.write(strlen.length,"<br>");
+      document.write(string.length,"<hr>");
+
+      document.write("5.charAt method.<br>")
+
+      function char(a){
+        let charec='SaikiranJadi';
+        document.write(charec.charAt(8))
+
+      }
+      char()
+
+
+
+    </script>
+    
+</body>
+</html>

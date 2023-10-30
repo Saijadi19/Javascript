@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Js-2</title>
+</head>
+<body>
+    <script>
+        // p-1
+        var i=prompt("Enter a number:");
+    
+        if(i%2===0){
+         console.log(i + " is even number");
+
+
+        }
+        else{
+            console.log(i + " is odd number");
+
+
+        }
+        // p-2
+
+        var year=prompt("Enter Year");
+         if(year%4==0 && year % 100 !=0 ){
+            console.log(year +" is Leap year.");
+
+         }
+         else{
+            console.log(year +" is not a Leap year.");
+
+
+         }
+
+
+        //  p-3
+        var x,y,z;
+        x=prompt("First Num");
+        y=prompt("Second Num");
+        z=prompt("Third Num");
+         if(x > y && x >z){
+            console.log(x+" is largest ");
+            
+
+         }
+         else if(y > x  && y >z){
+            console.log(y +" is the largest");
+
+         }
+         else if(z > x && z > y){
+            console.log(z +" is the largest");
+
+         }
+         else {
+            console.log("All are equal");
+
+
+         }
+         // p-4
+         var a=+prompt("Please Enter the time.");
+         if(a>=6 && a<11){
+            console.log("Good Morning");
+
+         }
+         else if(a>11.01 && a<=17){
+            console.log("Good Afternoon");
+
+         }
+         else if(a>=17.01 && a<=23) {
+            console.log("Good Evening");
+
+         }
+         else{
+            console.log("Good Night");
+         }
+
+
+         // P-5
+         var a,b,c,d;
+         a=+prompt("Enter amount to convert");
+         b=+prompt("Enter Currency Code");
+         c=+prompt("Enter req. Currency code");
+         d=a*0.95;
+          console.log("Converted currency is: " + d);
+
+         //  P-6
+         var trafficLight=prompt("Enter color of traffic light")
+         switch(trafficLight){
+            case "yellow":console.log("Slow Down")
+            break;
+            case "red":console.log("Stop")
+            break;
+            case "green":console.log("Go")
+            break;
+            default:console.log("Enter color correctly")
+
+         }
+         var a=prompt("Name of the month")
+         switch (a){
+            case "nov":
+            case "dec":
+            case "jan": 
+            case "feb":
+            console.log("Winter season")
+            break;
+
+            case "mar":
+            case "apr":
+            case "may":
+            case "jun":
+               console.log("Rainy season")
+            break;
+
+            case "jul":
+            case "aug":
+            case "sept":
+            case "oct":console.log("Summer season")
+            break;
+
+            default:console.log("Enter month correctly")
+         
+         }
+         var b=prompt("select a number")
+         switch(b){
+            case '1':console.log("Option 1 is selected")
+            break;
+            case '2':console.log("Option 2 is selected")
+            break;
+            case '3':console.log("Option 3 is selected")
+            break;
+            case '4':console.log("Option 4 is selected")
+            break;
+            default:console.log("Invalid option")
+         }
+
+
+        
+
+         
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    </script>
+    
+</body>
+</html>

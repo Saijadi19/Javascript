@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Assignment</title>
+    <!-- <script src="./index.js"></script> -->
+</head>
+
+<body>
+    <script>
+
+
+        console.log("Reverse Pattern using funtion")
+        function reversePattern(a) {
+            for (let i = a; i >= 1; i--) {
+                let pattern = ' ';
+
+                for (let j = 1; j <= i; j++) {
+                    pattern += '* ';
+
+                }
+                console.log(pattern);
+            }
+
+        } reversePattern(6, "\n")
+
+
+
+
+        console.log("Printing pattern using function")
+
+
+        function printPattern(b) {
+            for (let i = 1; i <= b; i++) {
+                let pattern = ' ';
+
+                for (let j = 1; j <= i; j++) {
+                    pattern += '* ';
+
+                }
+                console.log(pattern);
+            }
+
+        }
+        printPattern(6, "\n")
+
+
+
+        console.log("Checking wheather the string is palindrome or not")
+
+        function palindrome(string) {
+            let len = string.length;
+            for (var i = 0; i < len / 2; i++) {
+                if (string[i] !== string[len - 1 - i]) {
+                    return false;
+
+                }
+
+            }
+            return true;
+
+
+
+        } console.log(palindrome("madam\n"))
+
+
+        // program-4
+        function strLength(a) {
+            var b = 0;
+            for (i = 0; a[i]; i++) {
+                b++
+            }
+            return b;
+
+
+
+        }
+        console.log(strLength("Sai Jadi"))
+
+
+
+
+
+
+
+
+
+
+    </script>
+
+</body>
+
+</html>

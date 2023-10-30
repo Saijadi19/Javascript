@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+        <script>
+            console.log("Write a JavaScript program to list the values of a JavaScript object")
+            const obj1={"Name":"Sai","Gender":"Male","Age":22}
+            console.log(Object.values(obj1))
+
+
+
+
+           console.log("Define objects using literals and constructor")
+            const obj={"Name":"Sai","Gender":"Male","Age":22}
+            const obj2=new Object()
+            obj1.Name="Kiran";
+            obj1.Gender="Male";
+            obj1.Age=16;
+            console.log(obj)
+            console.log(obj2)
+
+ 
+            console.log("Write a JavaScript program to list the properties of a JavaScript object")
+            const obj3={"Name":"Saijadi","Gender":"Male","Age":22}
+            console.log(Object.keys(obj3))
+            console.log("Write a JavaScript program to list the entries of a JavaScript object")
+            const obj4={"Name":"Saijadi","Gender":"Male","Age":22}
+            var x=Object.entries(obj4)
+            console.log(x)
+
+  
+
+            console.log("Length of the Object")
+            var obj6 = {
+            Name: "Saijadi",
+            Gender:"Male",
+            age: 18 
+            };
+
+            var length = Object.keys(obj6).length;
+            console.log(length);
+
+            console.log("Iterate object using for in Loop")
+            const obj7={"Name":"Saijadi","Age":22,"Gender":"Male"}
+            for(x in obj7){
+            console.log(obj7[x])
+            }
+
+
+            console.log("Iterate object using for of Loop")
+            const obj8 = ['a', 'b', 'c'];
+            for (x of obj8) {
+            console.log(x);
+            }
+
+            console.log("Write a get method inside the object")
+            const obj9={
+            "name":"Ravijadi",
+            "age":32,
+            "color":"brown",
+            "height":5.1,
+            set colors(col){
+                this.color=col;
+            }
+            }
+            console.log(obj9)
+
+
+
+
+
+
+
+
+
+
+        </script>
+    </body>
+</html>

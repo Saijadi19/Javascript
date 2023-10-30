@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Js-1</title>
+</head>
+<body>
+    <script>
+        // Program-1
+       var a=prompt("Enter your name:");
+       alert("Hey, " + a  + "! Never visit again ");
+
+    //    Program-2
+       var x=prompt("First Number");
+       var y=prompt("Operator ( * , / , - , + )");
+       var z=prompt("Second Number");
+       var result = 
+       y ==='+'
+       ? x+z
+       :y ==='-'
+       ? x-z
+       :y==='*'
+       ? x*z
+       :y ==='/' &&  y !== 0
+       ? x/z
+       :"Invalid operator or Cannot divid by 0 ";
+      alert("Result: " + result );
+       
+
+    //   Program-3
+       var i=prompt("Enter your age");
+       alert( i > 18? "Eligible for vote":"Not Eligible for vote");
+
+
+
+    //    Program-4
+       var j=prompt("Enter Temp.");
+       var k=(j*(9/5)+32);
+        alert("Converted temp. =" +k);
+
+
+        // Program-5
+        var b=prompt("Enter a number");
+        alert( b%2==0?b + " is Even Number": b +" is Odd Number");
+        
+
+        // Program-6
+        var pass=+prompt("Enter password");
+        var p1=pass;
+        alert( p1===799787 ?"Access Granted":"Access denied");
+        
+
+
+    </script>
+    
+</body>
+</html>
